@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <title>Chemstore Quiz Results</title>
+</head>
+
+<body>
+    <!--Logo in heading-->
+    <div id="heading">
+        <a aria-label="Clicking this logo will redirect you to the start of this quiz" href="index.html"><img aria-label="Chemstore logo" src="assets/images/chemstore-logo.png" alt="Chemstore Logo"></a>
+    </div>
+
+    <div id="result-board">
+        <h1>Your Result!</h1>
+        <p aria-label="Displays result out of 10" id="result"></p>
+    </div>
+
+    <div id="result-restart">
+        <button aria-label="Restart button will restart the quiz" onclick="restartQuiz()" id="restart-button">Restart</button>
+    </div>
+
+    <div id="links">
+        <a href="https://chemstore.ie/" target="_blank" rel="noopener" aria-label="Opens the Chemstore website page in a new tab."><i class="fas fa-link"></i></a>
+        <a href="https://www.linkedin.com/company/chemstore-group" target="_blank" rel="noopener" aria-label="Opens a LinkedIn page in a new tab."><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/chemstore" target="_blank" rel="noopener" aria-label="Opens a Twitter page in a new tab."><i class="fab fa-twitter"></i></a>
+    </div>
+    
+    <!-- Font Awesome installation -->
+    <script src="https://kit.fontawesome.com/2747d9050d.js" crossorigin="anonymous"></script>
+    <!--Javascript files-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/end-quiz.js"></script>
+</body>
+
+</html>

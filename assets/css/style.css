@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap');
+
+:root {
+    --cgreen: #98c244;
+    --cred: #e6554d;
+    --cnavy: #2d3347;
+}
+
+html {
+    background-color: var(--cnavy);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Logo at top of page */
+
+#heading {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#heading img {
+    height: 3em;
+}
+
+/* Links at bottom of page, website, LinkedIn and Twiiter */
+
+#links {
+    width: 98%;
+    padding: 30px 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.fab,
+.fas {
+    color: var(--cgreen);
+    letter-spacing: 20px;
+    font-size: 1.8rem;
+    margin: 0 auto;
+}
+
+/* Start Quiz button */
+
+.hide {
+    display: none;
+}
+
+/* Start screen */
+
+#start {
+    text-align: center;
+    height: auto;
+}
+
+#start h1 {
+    margin-top: 60px;
+}
+
+#start p {
+    margin-top: 30px;
+}
+
+#start-button {
+    margin-top: 30px;
+    width: 200px;
+}
+
+#img-container {
+    width: 100%;
+}
+
+#start img {
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* Button Design */
+
+button {
+    padding: 15px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--cgreen);
+    color: white;
+    border: 2px solid white;
+    width: 40%;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--cgreen);
+    border: 2px solid var(--cgreen);
+    transition: 120ms;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.choices {
+    background-color: white;
+    color: var(--cnavy);
+    border: 2px solid var(--cnavy);
+    font-size: 1rem;
+    width: 50%;
+}
+
+.choices:hover {
+    border: 2px solid var(--cgreen);
+    color: var(--cnavy);
+    cursor: pointer;
+}
+
+#next-button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-top: 30px;
+}
+
+#restart-button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-top: 30px;
+    background-color: white;
+    color: var(--cgreen);
+    border: 2px solid var(--cgreen);
+}
+
+#restart-button:hover {
+    background-color: var(--cgreen);
+    color: white;
+    border: 2px solid white;
+}
+
+/* Quiz area */
+
+#quiz-area {
+    text-align: center;
+}
+
+#quiz-area h2 {
+    margin-bottom: 30px;
+}
+
+#next {
+    margin-top: 30px;
+}
+
+#result-restart {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+#question-tracker {
+    font-size: 1rem;
+    width: 100%;
+}
+
+#question-text {
+    margin-top: 0;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+/* End quiz screen */
+#result-board {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#result-board h1 {
+    margin-top: 60px;
+}
+
+/* Correct and incorrect button stylings */
+
+.correct {
+    background-color: var(--cgreen);
+}
+
+.incorrect {
+    background-color: var(--cred);
+}
+
+/* Disable button stylings */
+
+.button-disable {
+    pointer-events: none;
+}
+
+/* Modal from W3 Schools */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #f8f8f8;
+    color: var(--cnavy);
+    font-weight: normal;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid var(--cgreen);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.close {
+    color: #e6554d;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cred);
+    margin: 10px auto;
+    font-size: 1rem;
+    height: 40px;
+    width: 80px;
+}
+
+#myBtn:hover {
+    background-color: white;
+    color: var(--cred);
+    border: 2px solid var(--cred);
+}
+
+@media only screen and (max-width: 950px) {
+    .choices {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .choices {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #start-button {
+        width: 60%;
+    }
+
+    #question-text {
+        font-size: 1.2rem;
+    }
+}
