@@ -17,7 +17,7 @@ const endScreen = document.getElementById('end-page');
 let questionCounter = 0;
 let questionProgress = 0;
 var score = 0;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 15;
 
 /**
  * Function hides start area after start quiz button is clicked.
@@ -40,6 +40,14 @@ let questions = [{
         answer: 1
     },
     {
+        question: 'Fill in the blank: Health & _______, at work Act 2005',
+        choice1: 'Security',
+        choice2: 'Safety',
+        choice3: 'Salinity',
+        choice4: 'Slide',
+        answer: 2
+    },
+    {
         question: 'What is the maximum length of time a bund should be left unserviced?',
         choice1: '6 months',
         choice2: '1 year',
@@ -54,6 +62,14 @@ let questions = [{
         choice3: 'Turn up to work on time',
         choice4: 'Purchase you a company car',
         answer: 2
+    },
+    {
+        question: 'What does SDS stand for?',
+        choice1: 'Solid Drive State',
+        choice2: 'Secure Device Safety',
+        choice3: 'Safety Data Sheet',
+        choice4: 'Safety Demonstration Slide',
+        answer: 3
     },
     {
         question: 'What percentage of volumne must a bund be able to store?',
@@ -104,12 +120,36 @@ let questions = [{
         answer: 1
     },
     {
-        question: 'What does an SDS stand for?',
-        choice1: 'Solid Drive State',
-        choice2: 'Secure Device Safety',
-        choice3: 'Safety Data Sheet',
-        choice4: 'Safety Demonstration Slide',
+        question: 'What many points are on a Safety Datat Sheet?',
+        choice1: '24',
+        choice2: '6',
+        choice3: '16',
+        choice4: '10',
         answer: 3
+    },
+    {
+        question: 'What of these is NOT a chemical form?',
+        choice1: 'Solid',
+        choice2: 'Liquid',
+        choice3: 'Gas',
+        choice4: 'Metal',
+        answer: 4
+    },
+    {
+        question: 'What does CLP stand for?',
+        choice1: 'Clinical Lab Products',
+        choice2: 'Constraint Logic Programming',
+        choice3: 'Classification, Labelling and Packaging',
+        choice4: 'Chlorine Loading Potential',
+        answer: 3
+    },
+    {
+        question: 'Which of these is NOT a point/ section in a SDS?',
+        choice1: 'First Aid Measures',
+        choice2: 'Company Information',
+        choice3: 'Hazards Identification',
+        choice4: 'Toxicological Information',
+        answer: 2
     },
 ]
 
@@ -126,7 +166,7 @@ function showQuiz() {
     questionProgress++
 
     // Displays current question user is on
-    turn.innerText = `Question ${questionProgress} of 10`;
+    turn.innerText = `Question ${questionProgress} of 15`;
     // Takes user to end-quiz.html
     endQuiz();
 }
